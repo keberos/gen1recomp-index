@@ -42,4 +42,6 @@ NEED TOWN MAP off in the options if you would rather not wait.
 No ROM data or game assets are included. The mod opens the engine's own
 TOWN MAP screen, the same one the bag item opens.
 
-Not yet tested in game.
+Verified in game on the defaults. The non-default button choices, the escape
+hatch for unrecognised controllers, and the behaviour before you own the
+TOWN MAP have not been separately exercised.
