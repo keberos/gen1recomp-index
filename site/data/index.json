@@ -170,7 +170,7 @@
     },
     {
       "id": "raichu-unlock",
-      "title": "Raichu Unlock",
+      "title": "Raichu Unlock (Yellow)",
       "author": "keberos",
       "version": "0.1.0",
       "summary": "Yellow refuses a Thunder Stone on the starter Pikachu, and there's no other Pikachu to try it on - so Raichu is unobtainable without a link trade. This lets the stone work, and a second stone on the Raichu reverts it back.",
@@ -199,12 +199,12 @@
       "latest": {
         "version": "0.1.0",
         "tag": "v0.1.0",
-        "name": "Raichu Unlock 0.1.0",
+        "name": "Raichu Unlock (Yellow) 0.1.0",
         "prerelease": true,
         "zip": {
           "name": "raichu-unlock-0.1.0.zip",
           "url": "https://github.com/keberos/raichu-unlock/releases/download/v0.1.0/raichu-unlock-0.1.0.zip",
-          "size": 8128
+          "size": 8251
         }
       }
     },
