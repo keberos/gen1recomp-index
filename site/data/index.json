@@ -49,7 +49,7 @@
       "id": "pokemove-colorfix",
       "title": "Pokemove Colorfix",
       "author": "keberos",
-      "version": "1.0.0",
+      "version": "1.1.0",
       "summary": "Battle move animations render two-tone white-and-black. This gives each one a palette from its move's elemental type: Ember burns orange, Thundershock is yellow, Surf is blue.",
       "categories": [
         "ART"
@@ -74,14 +74,14 @@
       "description_url": "https://raw.githubusercontent.com/keberos/gen1recomp-index/main/site/descriptions/pokemove-colorfix.md",
       "update_check": "ok",
       "latest": {
-        "version": "1.0.0",
-        "tag": "v1.0.0",
-        "name": "Pokemove Colorfix 1.0.0",
+        "version": "1.1.0",
+        "tag": "v1.1.0",
+        "name": "Pokemove Colorfix 1.1.0",
         "prerelease": false,
         "zip": {
-          "name": "pokemove-colorfix-1.0.0.zip",
-          "url": "https://github.com/keberos/pokemove-colorfix/releases/download/v1.0.0/pokemove-colorfix-1.0.0.zip",
-          "size": 5945
+          "name": "pokemove-colorfix-1.1.0.zip",
+          "url": "https://github.com/keberos/pokemove-colorfix/releases/download/v1.1.0/pokemove-colorfix-1.1.0.zip",
+          "size": 6236
         }
       }
     },
