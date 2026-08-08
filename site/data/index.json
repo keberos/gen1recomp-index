@@ -87,6 +87,46 @@
       }
     },
     {
+      "id": "color-saturation",
+      "title": "Color Saturation",
+      "author": "keberos",
+      "version": "0.1.0",
+      "summary": "One SATURATION dial, 0 to 150 percent. Scales each colour's distance from grey and nothing else, so hue and brightness stay put - no tone bias like a palette.",
+      "categories": [
+        "ART"
+      ],
+      "tags": [
+        "colour",
+        "saturation",
+        "palette",
+        "advanced",
+        "cosmetic"
+      ],
+      "license": "MIT",
+      "repo": "https://github.com/keberos/color-saturation",
+      "github": "keberos/color-saturation",
+      "api": 2,
+      "game_version": ">=0.0.0-0 <2.0.0",
+      "profile": "content",
+      "experimental": true,
+      "permissions": [
+        "engine_internals"
+      ],
+      "description_url": "https://raw.githubusercontent.com/keberos/gen1recomp-index/main/site/descriptions/color-saturation.md",
+      "update_check": "ok",
+      "latest": {
+        "version": "0.1.0",
+        "tag": "v0.1.0",
+        "name": "Color Saturation 0.1.0",
+        "prerelease": true,
+        "zip": {
+          "name": "color-saturation-0.1.0.zip",
+          "url": "https://github.com/keberos/color-saturation/releases/download/v0.1.0/color-saturation-0.1.0.zip",
+          "size": 5513
+        }
+      }
+    },
+    {
       "id": "poison-notify",
       "title": "Poison Notify",
       "author": "keberos",
