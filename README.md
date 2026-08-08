@@ -27,8 +27,9 @@ adding this is a deliberate act of trusting what it lists.
 | Mod | Version | |
 | --- | --- | --- |
 | [Pokeball Colorfix](https://github.com/keberos/pokeball-colorfix) | 1.0.0 | Colours every Poké Ball the engine leaves grey |
-| [Pokemove Colorfix](https://github.com/keberos/pokemove-colorfix) | 1.0.0 | Colours battle move animations by elemental type |
+| [Pokemove Colorfix](https://github.com/keberos/pokemove-colorfix) | 1.1.1 | Colours battle move animations by elemental type |
 | [Poison Notify](https://github.com/keberos/poison-notify) | 0.1.0 | Corner PSN badge instead of the full-screen poison flash — experimental |
+| [Quick Map](https://github.com/keberos/quickmap) | 1.0.1 | Opens the TOWN MAP with one button instead of START → ITEM → scroll → A |
 
 ## Layout
 
@@ -61,7 +62,12 @@ serve it from the `/site` folder on `main` and the primary feed URL
 1. Publish the mod in its own repo with a release whose asset is
    `<id>-<version>.zip`.
 2. Add an entry to `site/data/index.json` and a `site/descriptions/<id>.md`.
-3. Commit and push. Clients pick it up within a day, or immediately on a fresh
+3. Add a row to the **Listed** table above, and bump its version there on every
+   release. Nothing generates that table — it is the repo's shop window and the
+   only part of this index a human reads first, so it is also the part that
+   silently goes stale. The feed is what clients actually read; the table is
+   what people do.
+4. Commit and push. Clients pick it up within a day, or immediately on a fresh
    source add.
 
 Keep `latest.zip.url`, `latest.tag` and `version` in step with the actual
