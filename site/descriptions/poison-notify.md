@@ -8,11 +8,18 @@ fifth of a second. Over a 3D renderer it is a full-screen veil that strobes
 the entire diorama dark while you walk, and it reads as the view stuttering
 whether or not anything is actually stuttering.
 
-**PSN ALERT.** `CHIP` is a purple `PSN` badge in the top-left, held for about
-0.8 seconds — it pulses on the same 4-frame beat the hardware flash used,
-then holds steady so it stays readable. `EDGE` is a thin border pulse
-instead, about a twelfth of the vanilla fill. `VANILLA` keeps the engine's
-flash untouched. `OFF` draws nothing.
+**PSN ALERT.** `CHIP` is a purple `PSN` badge in the screen's top-left
+corner, held for about 0.8 seconds — it pulses on the same 4-frame beat the
+hardware flash used, then holds steady so it stays readable. `EDGE` pulses
+the screen border instead, about a twelfth of the vanilla fill. `VANILLA`
+keeps the engine's flash untouched. `OFF` draws nothing.
+
+**It docks to the screen, not to the Game Boy canvas.** The 160x144 canvas is
+letterboxed into the window, so on a 16:9 display its corner is a good way
+into the picture and its border is a rectangle floating in the middle. The
+badge is laid out in window space instead, against the cutout-safe rect, so
+it reaches the real screen edge whatever the aspect ratio — the same layer
+the on-screen touch pad draws in.
 
 **PSN SOUND.** The poison step sound effect, on its own ON/OFF row. Off
 leaves the badge as the only notice.
@@ -34,12 +41,11 @@ because the whole screen moves at the moment it lands. Setting both rows to
 apart.
 
 **What it touches.** No render pipeline, no world pass, no palette state. It
-zeroes a counter the engine set and draws into the UI canvas, which
-composites over a render pipeline's world image the same way a dialogue box
-does — so it sits on top of a voxel or diorama renderer rather than fighting
-it.
+zeroes a counter the engine set and draws over the finished composite through
+the `render.hud` hook — so it sits on top of a voxel or diorama renderer
+rather than fighting it.
 
 No ROM data or game assets are included.
 
-Marked experimental: traced against the engine source but not yet run, so the
-badge's size, position and hold time are likely to move before 1.0.
+Marked experimental: confirmed working in-game, but the badge's size and hold
+time are likely to move before 1.0.

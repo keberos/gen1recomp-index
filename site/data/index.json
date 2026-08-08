@@ -3,7 +3,8 @@
   "generated_at": "2026-08-07T00:00:00Z",
   "categories": [
     "ART",
-    "QOL"
+    "QOL",
+    "UI"
   ],
   "mods": [
     {
@@ -89,10 +90,10 @@
       "id": "poison-notify",
       "title": "Poison Notify",
       "author": "keberos",
-      "version": "0.1.0",
-      "summary": "Field poison darkens the whole screen every fourth step, which is unreadable over a 3D renderer. This puts the notice in a corner PSN badge instead, and warns you before a poisoned Pokemon blacks you out.",
+      "version": "0.2.0",
+      "summary": "Field poison darkens the whole screen every fourth step, which is unreadable over a 3D renderer. This puts the notice in a corner PSN badge instead, docked to the real screen edge at any aspect ratio, and warns you before a poisoned Pokemon blacks you out.",
       "categories": [
-        "ART"
+        "UI"
       ],
       "tags": [
         "poison",
@@ -115,14 +116,14 @@
       "description_url": "https://raw.githubusercontent.com/keberos/gen1recomp-index/main/site/descriptions/poison-notify.md",
       "update_check": "ok",
       "latest": {
-        "version": "0.1.0",
-        "tag": "v0.1.0",
-        "name": "Poison Notify 0.1.0",
+        "version": "0.2.0",
+        "tag": "v0.2.0",
+        "name": "Poison Notify 0.2.0",
         "prerelease": true,
         "zip": {
-          "name": "poison-notify-0.1.0.zip",
-          "url": "https://github.com/keberos/poison-notify/releases/download/v0.1.0/poison-notify-0.1.0.zip",
-          "size": 8482
+          "name": "poison-notify-0.2.0.zip",
+          "url": "https://github.com/keberos/poison-notify/releases/download/v0.2.0/poison-notify-0.2.0.zip",
+          "size": 10594
         }
       }
     },
