@@ -83,6 +83,47 @@
           "size": 5945
         }
       }
+    },
+    {
+      "id": "poison-notify",
+      "title": "Poison Notify",
+      "author": "keberos",
+      "version": "0.1.0",
+      "summary": "Field poison darkens the whole screen every fourth step, which is unreadable over a 3D renderer. This puts the notice in a corner PSN badge instead, and warns you before a poisoned Pokemon blacks you out.",
+      "categories": [
+        "ART"
+      ],
+      "tags": [
+        "poison",
+        "status",
+        "overworld",
+        "hud",
+        "3d",
+        "cosmetic"
+      ],
+      "license": "MIT",
+      "repo": "https://github.com/keberos/poison-notify",
+      "github": "keberos/poison-notify",
+      "api": 2,
+      "game_version": ">=0.0.0-0 <2.0.0",
+      "profile": "content",
+      "experimental": true,
+      "permissions": [
+        "engine_internals"
+      ],
+      "description_url": "https://raw.githubusercontent.com/keberos/gen1recomp-index/main/site/descriptions/poison-notify.md",
+      "update_check": "ok",
+      "latest": {
+        "version": "0.1.0",
+        "tag": "v0.1.0",
+        "name": "Poison Notify 0.1.0",
+        "prerelease": true,
+        "zip": {
+          "name": "poison-notify-0.1.0.zip",
+          "url": "https://github.com/keberos/poison-notify/releases/download/v0.1.0/poison-notify-0.1.0.zip",
+          "size": 8482
+        }
+      }
     }
   ]
 }

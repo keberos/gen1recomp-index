@@ -27,7 +27,8 @@ adding this is a deliberate act of trusting what it lists.
 | Mod | Version | |
 | --- | --- | --- |
 | [Pokeball Colorfix](https://github.com/keberos/pokeball-colorfix) | 1.0.0 | Colours every Poké Ball the engine leaves grey |
-| [Pokemove Colorfix](https://github.com/keberos/pokemove-colorfix) | 0.1.0 | Colours battle move animations by elemental type — experimental |
+| [Pokemove Colorfix](https://github.com/keberos/pokemove-colorfix) | 1.0.0 | Colours battle move animations by elemental type |
+| [Poison Notify](https://github.com/keberos/poison-notify) | 0.1.0 | Corner PSN badge instead of the full-screen poison flash — experimental |
 
 ## Layout
 
