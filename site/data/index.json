@@ -2,7 +2,8 @@
   "schema_version": 1,
   "generated_at": "2026-08-07T00:00:00Z",
   "categories": [
-    "ART"
+    "ART",
+    "TOOL"
   ],
   "mods": [
     {
@@ -122,6 +123,45 @@
           "name": "poison-notify-0.1.0.zip",
           "url": "https://github.com/keberos/poison-notify/releases/download/v0.1.0/poison-notify-0.1.0.zip",
           "size": 8482
+        }
+      }
+    },
+    {
+      "id": "quickmap",
+      "title": "Quick Map",
+      "author": "keberos",
+      "version": "1.0.0",
+      "summary": "Reaching the TOWN MAP takes START, ITEM, a scroll past the potions, then A. This puts it on one button - Y by default, and you can move it - plus an optional MAP row in the START menu.",
+      "categories": [
+        "TOOL"
+      ],
+      "tags": [
+        "townmap",
+        "controls",
+        "bindings",
+        "gamepad",
+        "quality-of-life"
+      ],
+      "license": "MIT",
+      "repo": "https://github.com/keberos/quickmap",
+      "github": "keberos/quickmap",
+      "api": 2,
+      "game_version": ">=0.0.0-0 <2.0.0",
+      "profile": "content",
+      "permissions": [
+        "engine_internals"
+      ],
+      "description_url": "https://raw.githubusercontent.com/keberos/gen1recomp-index/main/site/descriptions/quickmap.md",
+      "update_check": "ok",
+      "latest": {
+        "version": "1.0.0",
+        "tag": "v1.0.0",
+        "name": "Quick Map 1.0.0",
+        "prerelease": false,
+        "zip": {
+          "name": "quickmap-1.0.0.zip",
+          "url": "https://github.com/keberos/quickmap/releases/download/v1.0.0/quickmap-1.0.0.zip",
+          "size": 7629
         }
       }
     }
