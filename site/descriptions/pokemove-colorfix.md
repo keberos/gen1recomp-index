@@ -32,5 +32,4 @@ renders inside out.
 
 No ROM data or game assets are included.
 
-Marked experimental: the mechanism is verified against the engine source, but
-the colour choices have had limited play-testing.
+Verified in game: elemental and Normal move animations both read correctly.
