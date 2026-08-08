@@ -34,7 +34,6 @@ no restart.
 
 No ROM data or game assets are included.
 
-**Untested.** The mechanism is verified against the engine source — the
-OT-identity gate, the data-driven stone lookup, the symmetry of
-`Evolution.apply` — but no in-game run has happened yet. Published early so it
-can be installed on a device for testing.
+**Verified in-game.** Evolve and revert both confirmed working, and after
+reverting the mon behaves as an ordinary party Pikachu — the follower,
+Pikachu's Beach, and normal interactions all pick back up cleanly.
