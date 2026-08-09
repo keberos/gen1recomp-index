@@ -28,6 +28,7 @@ adding this is a deliberate act of trusting what it lists.
 | --- | --- | --- |
 | [Pokeball Colorfix](https://github.com/keberos/pokeball-colorfix) | 1.0.0 | Colours every Poké Ball the engine leaves grey |
 | [Pokemove Colorfix](https://github.com/keberos/pokemove-colorfix) | 1.1.3 | Colours battle move animations by elemental type |
+| [Color Saturation](https://github.com/keberos/color-saturation) | 1.0.0 | One SATURATION dial for ADVANCED colours — no tone bias, hue and brightness untouched |
 | [Poison Notify](https://github.com/keberos/poison-notify) | 0.2.0 | Corner PSN badge instead of the full-screen poison flash — experimental |
 | [Raichu Unlock (Yellow)](https://github.com/keberos/raichu-unlock) | 1.0.0 | Lets the starter PIKACHU evolve into RAICHU with a Thunder Stone, and revert |
 | [Quick Map](https://github.com/keberos/quickmap) | 1.0.1 | Opens the TOWN MAP with one button instead of START → ITEM → scroll → A |
