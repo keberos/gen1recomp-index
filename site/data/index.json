@@ -249,12 +249,13 @@
       "id": "button-shortcuts",
       "title": "Button Shortcuts",
       "author": "keberos",
-      "version": "0.1.0",
-      "summary": "Three one-button shortcuts instead of menu digging: BICYCLE, FLY, and throwing your preferred ball in battle. Every button is independently remappable. A sibling to Quick Map, which does the same for TOWN MAP - the two do not overlap.",
+      "version": "0.2.0",
+      "summary": "Four one-button shortcuts instead of menu digging: TOWN MAP, BICYCLE, FLY, and throwing your preferred ball in battle. Every button is independently remappable. Includes TOWN MAP too, so it stands alone without the sibling mod Quick Map - running both is redundant but harmless.",
       "categories": [
         "QOL"
       ],
       "tags": [
+        "townmap",
         "bicycle",
         "fly",
         "pokeball",
@@ -277,14 +278,14 @@
       "description_url": "https://raw.githubusercontent.com/keberos/gen1recomp-index/main/site/descriptions/button-shortcuts.md",
       "update_check": "ok",
       "latest": {
-        "version": "0.1.0",
-        "tag": "v0.1.0",
-        "name": "Button Shortcuts 0.1.0 (experimental)",
+        "version": "0.2.0",
+        "tag": "v0.2.0",
+        "name": "Button Shortcuts 0.2.0 (experimental)",
         "prerelease": true,
         "zip": {
-          "name": "button-shortcuts-0.1.0.zip",
-          "url": "https://github.com/keberos/button-shortcuts/releases/download/v0.1.0/button-shortcuts-0.1.0.zip",
-          "size": 10436
+          "name": "button-shortcuts-0.2.0.zip",
+          "url": "https://github.com/keberos/button-shortcuts/releases/download/v0.2.0/button-shortcuts-0.2.0.zip",
+          "size": 12210
         }
       }
     }
