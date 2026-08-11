@@ -54,5 +54,8 @@ No ROM data or game assets are included. Every action calls the engine's
 own methods — the same bicycle toggle, the same FLY warp, the same ball
 throw the bag itself uses.
 
-Status: BIKE verified in-game. BALL is fixed but not yet re-verified. MAP
-reuses Quick Map's verified code. FLY is untested.
+**Status: kept experimental until Safari Zone and FLY are both verified
+too.** BIKE and BALL (regular battles) are confirmed working in-game. MAP
+reuses Quick Map's verified code. BALL's Safari Zone branch
+(`safariAction`, a separate code path from the regular-battle fix above)
+and FLY are both still untested.
