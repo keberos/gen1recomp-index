@@ -31,7 +31,8 @@ adding this is a deliberate act of trusting what it lists.
 | [Color Saturation](https://github.com/keberos/color-saturation) | 1.0.0 | One SATURATION dial for ADVANCED colours — no tone bias, hue and brightness untouched |
 | [Poison Notify](https://github.com/keberos/poison-notify) | 0.2.0 | Corner PSN badge instead of the full-screen poison flash — experimental |
 | [Raichu Unlock (Yellow)](https://github.com/keberos/raichu-unlock) | 1.0.0 | Lets the starter PIKACHU evolve into RAICHU with a Thunder Stone, and revert |
-| [Quick Map](https://github.com/keberos/quickmap) | 1.1.0 | One-button shortcuts for TOWN MAP, BICYCLE, FLY, and throwing your preferred ball in battle |
+| [Quick Map](https://github.com/keberos/quickmap) | 1.0.1 | Opens the TOWN MAP with one button instead of START → ITEM → scroll → A |
+| [Button Shortcuts](https://github.com/keberos/button-shortcuts) | 0.1.0 | One-button BICYCLE, FLY, and battle ball throw — experimental, sibling to Quick Map |
 
 ## Layout
 

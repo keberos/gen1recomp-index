@@ -210,16 +210,13 @@
       "id": "quickmap",
       "title": "Quick Map",
       "author": "keberos",
-      "version": "1.1.0",
-      "summary": "Four one-button shortcuts instead of menu digging: TOWN MAP, BICYCLE, FLY, and throwing your preferred ball in battle. Every button is independently remappable, including to shoulders and triggers.",
+      "version": "1.0.1",
+      "summary": "Reaching the TOWN MAP takes START, ITEM, a scroll past the potions, then A. This puts it on one button - Y by default, and you can move it - plus an optional MAP row in the START menu.",
       "categories": [
         "QOL"
       ],
       "tags": [
         "townmap",
-        "bicycle",
-        "fly",
-        "pokeball",
         "controls",
         "bindings",
         "gamepad",
@@ -237,14 +234,57 @@
       "description_url": "https://raw.githubusercontent.com/keberos/gen1recomp-index/main/site/descriptions/quickmap.md",
       "update_check": "ok",
       "latest": {
-        "version": "1.1.0",
-        "tag": "v1.1.0",
-        "name": "Quick Map 1.1.0",
+        "version": "1.0.1",
+        "tag": "v1.0.1",
+        "name": "Quick Map 1.0.1",
         "prerelease": false,
         "zip": {
-          "name": "quickmap-1.1.0.zip",
-          "url": "https://github.com/keberos/quickmap/releases/download/v1.1.0/quickmap-1.1.0.zip",
-          "size": 11922
+          "name": "quickmap-1.0.1.zip",
+          "url": "https://github.com/keberos/quickmap/releases/download/v1.0.1/quickmap-1.0.1.zip",
+          "size": 7730
+        }
+      }
+    },
+    {
+      "id": "button-shortcuts",
+      "title": "Button Shortcuts",
+      "author": "keberos",
+      "version": "0.1.0",
+      "summary": "Three one-button shortcuts instead of menu digging: BICYCLE, FLY, and throwing your preferred ball in battle. Every button is independently remappable. A sibling to Quick Map, which does the same for TOWN MAP - the two do not overlap.",
+      "categories": [
+        "QOL"
+      ],
+      "tags": [
+        "bicycle",
+        "fly",
+        "pokeball",
+        "battle",
+        "controls",
+        "bindings",
+        "gamepad",
+        "quality-of-life"
+      ],
+      "license": "MIT",
+      "repo": "https://github.com/keberos/button-shortcuts",
+      "github": "keberos/button-shortcuts",
+      "api": 2,
+      "game_version": ">=0.0.0-0 <2.0.0",
+      "profile": "content",
+      "experimental": true,
+      "permissions": [
+        "engine_internals"
+      ],
+      "description_url": "https://raw.githubusercontent.com/keberos/gen1recomp-index/main/site/descriptions/button-shortcuts.md",
+      "update_check": "ok",
+      "latest": {
+        "version": "0.1.0",
+        "tag": "v0.1.0",
+        "name": "Button Shortcuts 0.1.0 (experimental)",
+        "prerelease": true,
+        "zip": {
+          "name": "button-shortcuts-0.1.0.zip",
+          "url": "https://github.com/keberos/button-shortcuts/releases/download/v0.1.0/button-shortcuts-0.1.0.zip",
+          "size": 10436
         }
       }
     }
