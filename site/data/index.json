@@ -287,6 +287,45 @@
           "size": 13426
         }
       }
+    },
+    {
+      "id": "rename-character",
+      "title": "Rename Character",
+      "author": "keberos",
+      "version": "0.1.0",
+      "summary": "There's no way to rename your character once the game starts. This adds a RENAME row to the START menu that reopens the vanilla naming screen at any time, and keeps Yellow's starter-Pikachu identity check working afterward.",
+      "categories": [
+        "QOL"
+      ],
+      "tags": [
+        "name",
+        "player",
+        "naming-screen",
+        "quality-of-life"
+      ],
+      "license": "MIT",
+      "repo": "https://github.com/keberos/rename-character",
+      "github": "keberos/rename-character",
+      "api": 2,
+      "game_version": ">=0.0.0-0 <2.0.0",
+      "profile": "content",
+      "experimental": true,
+      "permissions": [
+        "engine_internals"
+      ],
+      "description_url": "https://raw.githubusercontent.com/keberos/gen1recomp-index/main/site/descriptions/rename-character.md",
+      "update_check": "ok",
+      "latest": {
+        "version": "0.1.0",
+        "tag": "v0.1.0",
+        "name": "v0.1.0 (experimental)",
+        "prerelease": true,
+        "zip": {
+          "name": "rename-character-0.1.0.zip",
+          "url": "https://github.com/keberos/rename-character/releases/download/v0.1.0/rename-character-0.1.0.zip",
+          "size": 3913
+        }
+      }
     }
   ]
 }
