@@ -59,13 +59,13 @@ BALL (regular battles) are confirmed working in-game. MAP reuses Quick
 Map's verified code. BALL's Safari Zone branch (`safariAction`, a separate
 code path from the regular-battle fix above) is untested.
 
-**FLY is reported broken, cause not yet found.** Always refuses, even with
-the THUNDERBADGE and a party mon confirmed to know FLY through the
-*vanilla* party menu — which by the engine's own gating logic means FLY
-should have been available. Every field this code checks was re-verified
-against the engine source and matches `PartyMenu.lua`'s own working FLY
-row exactly; nothing wrong was found by reading the code, and this can't
-be run to test directly. The refusal message is now split into three
-specific ones (`Need the THUNDERBADGE.` / `Can't FLY indoors.` /
-`No POKéMON knows FLY.`) instead of one generic message, so whichever one
-shows up next pins the failing gate down.
+**FLY was fixed after a bug report, and awaits re-verification.** It
+always refused with `No POKéMON knows FLY.` for a player running a
+separate mod that widens field-move eligibility to any Pokémon that can
+*learn* a move, not only one with it in an active slot. The cause: this
+mod's FLY check hand-rolled the vanilla badge+moveset test directly
+instead of calling `OverworldState:partyKnows(moveId)` — the engine's own
+extension point for exactly this question, which runs that same check
+*through* a `fieldmove.eligibility` hook other mods can widen. A
+hand-rolled duplicate can never see a hook another mod wraps. Fixed by
+calling `partyKnows` instead of reimplementing it.
