@@ -1,6 +1,6 @@
-**Experimental.**
-
-Four one-button shortcuts instead of menu digging.
+Four one-button shortcuts instead of menu digging. All four actions are
+verified in-game, including Safari Zone's separate BALL branch and FLY
+under a mod that broadens field-move eligibility.
 
 | Action | Default | Vanilla path it replaces |
 |---|---|---|
@@ -38,29 +38,24 @@ uses, so a trainer blocking the ball and a ghost battle's guaranteed dodge
 come for free. Safari Zone gets its own path and ignores PREFERRED BALL
 entirely, since Safari never uses a regular ball.
 
-**A real bug, found and fixed by in-game testing.** The first release
-threw a ball that never visibly appeared — a press beeped but did nothing,
-and opening the bag afterward played the throw back late, looped.
-`BattleState:throwBall` only *queues* its sequence; it never sets
-`self.phase`, and the engine only drains that queue while
-`phase == "messages"`. The vanilla bag flow never hits this, because
-choosing ITEM already makes that switch before the bag ever reaches
-`throwBall`. This hotkey was skipping straight to `throwBall` from
-`phase == "menu"`, so the sequence silently stalled. Fixed by setting the
-same two fields `openItems`/`openParty` already set before any other
-queued sequence.
-
 No ROM data or game assets are included. Every action calls the engine's
 own methods — the same bicycle toggle, the same FLY warp, the same ball
 throw the bag itself uses.
 
-**Status: kept experimental until Safari Zone and FLY both work.** BIKE and
-BALL (regular battles) are confirmed working in-game. MAP reuses Quick
-Map's verified code. BALL's Safari Zone branch (`safariAction`, a separate
-code path from the regular-battle fix above) is untested.
+**Two real bugs, found and fixed by in-game testing before promotion.**
 
-**FLY was fixed after a bug report, and awaits re-verification.** It
-always refused with `No POKéMON knows FLY.` for a player running a
+The BALL button's first release threw a ball that never visibly
+appeared — a press beeped but did nothing, and opening the bag afterward
+played the throw back late, looped. `BattleState:throwBall` only *queues*
+its sequence; it never sets `self.phase`, and the engine only drains that
+queue while `phase == "messages"`. The vanilla bag flow never hits this,
+because choosing ITEM already makes that switch before the bag ever
+reaches `throwBall`. This hotkey was skipping straight to `throwBall` from
+`phase == "menu"`, so the sequence silently stalled. Fixed by setting the
+same two fields `openItems`/`openParty` already set before any other
+queued sequence.
+
+FLY always refused with `No POKéMON knows FLY.` for a player running a
 separate mod that widens field-move eligibility to any Pokémon that can
 *learn* a move, not only one with it in an active slot. The cause: this
 mod's FLY check hand-rolled the vanilla badge+moveset test directly

@@ -46,7 +46,6 @@ Verified in game on the defaults. The non-default button choices, the escape
 hatch for unrecognised controllers, and the behaviour before you own the
 TOWN MAP have not been separately exercised.
 
-A sibling mod, [Button Shortcuts](https://github.com/keberos/button-shortcuts)
-(experimental), adds one-button BICYCLE, FLY, and battle ball-throw
-shortcuts the same way — install either alone, or both together with no
-overlap.
+A sibling mod, [Button Shortcuts](https://github.com/keberos/button-shortcuts),
+adds one-button BICYCLE, FLY, and battle ball-throw shortcuts the same
+way — install either alone, or both together with no overlap.
