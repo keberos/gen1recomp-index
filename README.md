@@ -33,7 +33,7 @@ adding this is a deliberate act of trusting what it lists.
 | [Raichu Unlock (Yellow)](https://github.com/keberos/raichu-unlock) | 1.0.0 | Lets the starter PIKACHU evolve into RAICHU with a Thunder Stone, and revert |
 | [Quick Map](https://github.com/keberos/quickmap) | 1.0.1 | Opens the TOWN MAP with one button instead of START → ITEM → scroll → A |
 | [Button Shortcuts](https://github.com/keberos/button-shortcuts) | 1.0.0 | One-button TOWN MAP, BICYCLE, FLY, and battle ball throw |
-| [Rename Character](https://github.com/keberos/rename-character) | 0.1.0 | Rename your character at any time from the START menu — experimental |
+| [Rename Character](https://github.com/keberos/rename-character) | 1.0.0 | Rename your character at any time from the START menu |
 
 ## Layout
 

@@ -21,5 +21,5 @@ its real original trainer, exactly like a real cartridge.
 
 It doesn't rename the rival, only the player.
 
-Marked experimental: built from static engine analysis, not yet verified
-in-game.
+Verified in-game: renaming works, and Yellow's starter Pikachu keeps
+following you (and being recognized as the starter) after a rename.
