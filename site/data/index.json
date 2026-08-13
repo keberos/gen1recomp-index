@@ -249,8 +249,8 @@
       "id": "button-shortcuts",
       "title": "Button Shortcuts",
       "author": "keberos",
-      "version": "0.2.1",
-      "summary": "Four one-button shortcuts instead of menu digging: TOWN MAP, BICYCLE, FLY, and throwing your preferred ball in battle. Every button is independently remappable. BIKE and BALL (regular battles) are verified in-game; kept experimental until Safari Zone and FLY are too.",
+      "version": "0.2.2",
+      "summary": "Four one-button shortcuts instead of menu digging: TOWN MAP, BICYCLE, FLY, and throwing your preferred ball in battle. Every button is independently remappable. BIKE and BALL (regular battles) are verified in-game; FLY is reported broken and this release splits its refusal message to help find out why.",
       "categories": [
         "QOL"
       ],
@@ -278,14 +278,14 @@
       "description_url": "https://raw.githubusercontent.com/keberos/gen1recomp-index/main/site/descriptions/button-shortcuts.md",
       "update_check": "ok",
       "latest": {
-        "version": "0.2.1",
-        "tag": "v0.2.1",
-        "name": "Button Shortcuts 0.2.1 (experimental)",
+        "version": "0.2.2",
+        "tag": "v0.2.2",
+        "name": "Button Shortcuts 0.2.2 (experimental, FLY diagnostic)",
         "prerelease": true,
         "zip": {
-          "name": "button-shortcuts-0.2.1.zip",
-          "url": "https://github.com/keberos/button-shortcuts/releases/download/v0.2.1/button-shortcuts-0.2.1.zip",
-          "size": 12328
+          "name": "button-shortcuts-0.2.2.zip",
+          "url": "https://github.com/keberos/button-shortcuts/releases/download/v0.2.2/button-shortcuts-0.2.2.zip",
+          "size": 13233
         }
       }
     }

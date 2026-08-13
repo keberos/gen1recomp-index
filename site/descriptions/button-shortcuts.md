@@ -54,8 +54,18 @@ No ROM data or game assets are included. Every action calls the engine's
 own methods — the same bicycle toggle, the same FLY warp, the same ball
 throw the bag itself uses.
 
-**Status: kept experimental until Safari Zone and FLY are both verified
-too.** BIKE and BALL (regular battles) are confirmed working in-game. MAP
-reuses Quick Map's verified code. BALL's Safari Zone branch
-(`safariAction`, a separate code path from the regular-battle fix above)
-and FLY are both still untested.
+**Status: kept experimental until Safari Zone and FLY both work.** BIKE and
+BALL (regular battles) are confirmed working in-game. MAP reuses Quick
+Map's verified code. BALL's Safari Zone branch (`safariAction`, a separate
+code path from the regular-battle fix above) is untested.
+
+**FLY is reported broken, cause not yet found.** Always refuses, even with
+the THUNDERBADGE and a party mon confirmed to know FLY through the
+*vanilla* party menu — which by the engine's own gating logic means FLY
+should have been available. Every field this code checks was re-verified
+against the engine source and matches `PartyMenu.lua`'s own working FLY
+row exactly; nothing wrong was found by reading the code, and this can't
+be run to test directly. The refusal message is now split into three
+specific ones (`Need the THUNDERBADGE.` / `Can't FLY indoors.` /
+`No POKéMON knows FLY.`) instead of one generic message, so whichever one
+shows up next pins the failing gate down.
