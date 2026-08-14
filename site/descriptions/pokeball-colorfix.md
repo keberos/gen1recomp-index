@@ -32,9 +32,17 @@ players get the whole layer back.
 top of `main.lua`. Change the red, retune a state, or point a ball type
 somewhere else without touching any logic.
 
+**Playing with the VoxelMod battle-art fork?** That fork bakes the party HUD
+through a shader that flips near-black pixels to white over a dark backdrop,
+so its own text stays legible. It has no idea this mod exists, and was
+flipping the ball row's outline the same way — read as grey and white. 1.0.1
+detects the fork and swaps in a palette that clears its threshold with real
+margin instead.
+
 No ROM data or game assets are included. The party-row and healing-machine
 art is recoloured at runtime from your own imported cache.
 
 Verified in game: the thrown Poké Ball, the party rows, the healing machine.
 Not yet tested: the statused and fainted icons, the non-Poké ball colours,
-and the Master/Ultra flicker.
+and the Master/Ultra flicker. The VoxelMod fix is verified by math against
+the fork's real shader source, not yet confirmed in play.
