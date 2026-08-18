@@ -21,13 +21,18 @@ the top. Source: HeartGold/SoulSilver sprite rips from Bulbagarden Archives — 
 non-commercial use, and this is an unofficial fan-art swap, not affiliated with or endorsed
 by Nintendo, Creatures Inc., GAME FREAK inc., or The Pokémon Company.
 
-**0.2.0 is a diagnostic build.** 0.1.0 changed nothing in game, and static analysis found
-no fault — the hook exists in the current engine release, the wiring matches the bundled
-example mods, and the species ids are correct for Gen 1. So this build makes the game
-report which branch actually runs rather than guessing a second time.
+**Why 0.1.0 did nothing, and what 0.3.0 changed.** The first build went only through the
+public `pokemon.sprite` hook. A diagnostic build proved that hook was never raised even
+once, while this mod's *other* hook fired normally — so the bus worked and `Sprites.path`
+simply wasn't being reached. The engine history explains it: `DexEntryMenu` only began
+resolving its picture through `Sprites.path` between releases **v0.1.20 and v0.1.30**, and
+`Sprites.lua` at v0.1.0 raises no hook at all. On an older engine a hook-only mod is
+silently inert, with nothing broken anywhere to find.
 
-Open the Pokédex, back out, then press START and read the three `SPR` rows: how many
-`pokemon.sprite` calls were seen, how many arrived with kind `dex`, and the last dex
-species id with HIT or MISS against the art table. No rows at all means the mod is not
-loading. The sprite swap itself is unchanged and still in; the rows come out once the
-cause is known.
+0.3.0 wraps `DexEntryMenu.new` and replaces the sprite on the finished screen instead,
+which works on every engine version. The hook is kept too — it's the only route to
+Yellow's PRNT printer job. Full-colour art is marked to survive the SGB shade remap rather
+than coming back washed out. This version needs the `engine_internals` permission.
+
+Still carries three temporary `SPR` diagnostic rows in the START menu, and is not yet
+confirmed rendering in play.
