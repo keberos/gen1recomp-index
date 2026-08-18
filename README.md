@@ -34,7 +34,7 @@ adding this is a deliberate act of trusting what it lists.
 | [Quick Map](https://github.com/keberos/quickmap) | 1.0.1 | Opens the TOWN MAP with one button instead of START → ITEM → scroll → A |
 | [Button Shortcuts](https://github.com/keberos/button-shortcuts) | 1.0.0 | One-button TOWN MAP, BICYCLE, FLY, and battle ball throw |
 | [Rename Character](https://github.com/keberos/rename-character) | 1.0.0 | Rename your character at any time from the START menu |
-| [Pokedex Sprites (HGSS)](https://github.com/keberos/pokedex-sprites-hgss) | 0.1.0 | Swaps the Pokedex art for HeartGold/SoulSilver-style sprites — untested |
+| [Pokedex Sprites (HGSS)](https://github.com/keberos/pokedex-sprites-hgss) | 0.2.0 | Swaps the Pokedex art for HeartGold/SoulSilver-style sprites — diagnostic build |
 
 ## Layout
 

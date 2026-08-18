@@ -19,6 +19,13 @@ the top. Source: HeartGold/SoulSilver sprite rips from Bulbagarden Archives — 
 non-commercial use, and this is an unofficial fan-art swap, not affiliated with or endorsed
 by Nintendo, Creatures Inc., GAME FREAK inc., or The Pokémon Company.
 
-Untested in-game as of this release. Worth checking: the dex list scroll, a few full
-entries at different sprite sizes (a tall one like Alakazam, a wide one like Arcanine), and
-that battle/summary art is still vanilla.
+**0.2.0 is a diagnostic build.** 0.1.0 changed nothing in game, and static analysis found
+no fault — the hook exists in the current engine release, the wiring matches the bundled
+example mods, and the species ids are correct for Gen 1. So this build makes the game
+report which branch actually runs rather than guessing a second time.
+
+Open the Pokédex, back out, then press START and read the three `SPR` rows: how many
+`pokemon.sprite` calls were seen, how many arrived with kind `dex`, and the last dex
+species id with HIT or MISS against the art table. No rows at all means the mod is not
+loading. The sprite swap itself is unchanged and still in; the rows come out once the
+cause is known.

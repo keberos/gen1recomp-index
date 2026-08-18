@@ -293,8 +293,8 @@
       "id": "pokedex-sprites-hgss",
       "title": "Pokedex Sprites (HGSS)",
       "author": "keberos",
-      "version": "0.1.0",
-      "summary": "Swaps the Pokedex list-preview and entry-page art for HeartGold/SoulSilver-style sprites, for all 151 species. Battle, summary, evolution, and every other sprite site are untouched.",
+      "version": "0.2.0",
+      "summary": "Swaps the Pokedex list-preview and entry-page art for HeartGold/SoulSilver-style sprites, for all 151 species. Battle, summary, evolution, and every other sprite site are untouched. 0.2.0 is a diagnostic build: it adds three temporary SPR rows to the START menu to find why the swap did not take effect.",
       "categories": [
         "ART"
       ],
@@ -310,18 +310,19 @@
       "api": 2,
       "game_version": ">=0.0.0-0 <2.0.0",
       "profile": "content",
+      "experimental": true,
       "permissions": [],
       "description_url": "https://raw.githubusercontent.com/keberos/gen1recomp-index/main/site/descriptions/pokedex-sprites-hgss.md",
       "update_check": "ok",
       "latest": {
-        "version": "0.1.0",
-        "tag": "v0.1.0",
-        "name": "v0.1.0",
-        "prerelease": false,
+        "version": "0.2.0",
+        "tag": "v0.2.0",
+        "name": "v0.2.0 (diagnostic)",
+        "prerelease": true,
         "zip": {
-          "name": "pokedex-sprites-hgss-0.1.0.zip",
-          "url": "https://github.com/keberos/pokedex-sprites-hgss/releases/download/v0.1.0/pokedex-sprites-hgss-0.1.0.zip",
-          "size": 560442
+          "name": "pokedex-sprites-hgss-0.2.0.zip",
+          "url": "https://github.com/keberos/pokedex-sprites-hgss/releases/download/v0.2.0/pokedex-sprites-hgss-0.2.0.zip",
+          "size": 561322
         }
       }
     },
