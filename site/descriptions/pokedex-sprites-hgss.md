@@ -1,9 +1,11 @@
 The Pokédex draws every species with its original Game Boy sprite. This swaps that art
 for HeartGold/SoulSilver-style sprites, for all 151 species.
 
-**Only the Pokédex.** The list-view preview and the full entry page both change; battle,
-the party summary screen, evolution, Hall of Fame, trade, the title screen, and Professor
-Oak's lab all keep their original art untouched.
+**Only the Pokédex entry page.** Open the Pokédex, highlight a Pokémon you've caught and
+choose **DATA** — that page is where the picture lives. The Pokédex *list* draws no sprite
+at all in Gen 1, so scrolling it never looks different. Battle, the party summary screen,
+evolution, Hall of Fame, trade, the title screen, and Professor Oak's lab all keep their
+original art untouched.
 
 **How it works.** `src/pokemon/Sprites.lua` raises a public `pokemon.sprite` hook carrying
 `ctx.kind`, so a hook can tell which screen is asking for art — `"battle"`, `"dex"`,
