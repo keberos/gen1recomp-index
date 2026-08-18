@@ -46,5 +46,4 @@ other for the sprites.
 bounds — personal, non-commercial use. An unofficial fan-art swap, not affiliated with or
 endorsed by Nintendo, Creatures Inc., GAME FREAK inc., or The Pokémon Company.
 
-Entry-page sprites are confirmed working in play. The modern caught marker and the
-tall-sprite border fix are new in 0.4.0 and not yet verified.
+Verified in game.

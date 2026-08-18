@@ -293,7 +293,7 @@
       "id": "pokedex-sprites-hgss",
       "title": "Pokedex Sprites (HGSS)",
       "author": "keberos",
-      "version": "0.4.0",
+      "version": "1.0.0",
       "summary": "Swaps the Pokedex ENTRY PAGE art (highlight a caught Pokemon, choose DATA) for HeartGold/SoulSilver-style sprites, all 151 species, and repaints the dex list's caught marker as a proper red-and-white Poke Ball instead of a flat black disc. Battle, summary, evolution and every other sprite site are untouched.",
       "categories": [
         "ART"
@@ -311,21 +311,20 @@
       "api": 2,
       "game_version": ">=0.0.0-0 <2.0.0",
       "profile": "content",
-      "experimental": true,
       "permissions": [
         "engine_internals"
       ],
       "description_url": "https://raw.githubusercontent.com/keberos/gen1recomp-index/main/site/descriptions/pokedex-sprites-hgss.md",
       "update_check": "ok",
       "latest": {
-        "version": "0.4.0",
-        "tag": "v0.4.0",
-        "name": "v0.4.0",
-        "prerelease": true,
+        "version": "1.0.0",
+        "tag": "v1.0.0",
+        "name": "Pokedex Sprites (HGSS) 1.0.0",
+        "prerelease": false,
         "zip": {
-          "name": "pokedex-sprites-hgss-0.4.0.zip",
-          "url": "https://github.com/keberos/pokedex-sprites-hgss/releases/download/v0.4.0/pokedex-sprites-hgss-0.4.0.zip",
-          "size": 570202
+          "name": "pokedex-sprites-hgss-1.0.0.zip",
+          "url": "https://github.com/keberos/pokedex-sprites-hgss/releases/download/v1.0.0/pokedex-sprites-hgss-1.0.0.zip",
+          "size": 570820
         }
       }
     },
