@@ -33,6 +33,15 @@ sprite drawn at y = 0 reached above the mon-pic zone and broke the page's brown 
 sprites are capped at vanilla's own 56px front-pic limit, and each one carries a span mask
 so only opaque pixels are ever marked. The ball marker gets a disc mask for the same reason.
 
+**Useful Dex: either/or for the sprites.** Nothing breaks if both are installed and no hard
+conflict is declared, but Useful Dex registers its own dex screens, and a registry record
+beats the builtin. The modern caught-ball marker still works — its list is built on the
+engine's `PokedexMenu` and still renders through `ListMenu`. The entry-page sprite swap does
+not: its `setSpecies()` re-resolves the picture through `Sprites.path` with `kind = "battle"`
+(deliberately, so skin mods apply) and overwrites the swapped art, and it draws with its own
+screen rather than the engine's, so the true-colour mask never runs either. Run one or the
+other for the sprites.
+
 **Art.** HeartGold/SoulSilver sprite rips from Bulbagarden Archives, trimmed to their opaque
 bounds — personal, non-commercial use. An unofficial fan-art swap, not affiliated with or
 endorsed by Nintendo, Creatures Inc., GAME FREAK inc., or The Pokémon Company.
