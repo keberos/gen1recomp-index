@@ -32,20 +32,27 @@ players get the whole layer back.
 top of `main.lua`. Change the red, retune a state, or point a ball type
 somewhere else without touching any logic.
 
+**In the OG layout the row used to render green** — faithfully, as it happens.
+Super Game Boy coloured the whole HUD block (name, level, HP bar *and* the
+ball row) as one zone, taking the HP bar's own palette, so a full-health party
+turned the balls green. Colour can't simply be baked in there — the zone
+shader keys off the red channel and turns a baked red white — so 1.1.0 defers
+the row past that pass instead, to the same position the engine already uses
+for the mon pics and the thrown ball, where true colour survives.
+
 **Playing with the VoxelMod battle-art fork?** That fork writes your saved
 battle layout to OG the moment its 3D battle-art mode is turned on, and hides
 the option so it can't be switched back — a real, persisted change, not a
-per-battle trick. This mod's own party-row colouring is WIDE-layout-only for
-good reason elsewhere (see below), so it was reading "OG" and stepping aside
-entirely, no matter what palette it would have used — that's what read as
-grey and white. 1.0.2 detects the fork's own active-render flag and colours
-the row regardless of what the layout setting currently (truthfully, but
-irrelevantly) claims.
+per-battle trick. The mod's party-row colouring used to be WIDE-only, so it
+was reading "OG" and stepping aside entirely, no matter what palette it would
+have used — that's what read as grey and white. 1.0.2 detects the fork's own
+active-render flag and colours the row regardless of what the layout setting
+currently (truthfully, but irrelevantly) claims.
 
 No ROM data or game assets are included. The party-row and healing-machine
 art is recoloured at runtime from your own imported cache.
 
-Verified in game: the thrown Poké Ball, the party rows, the healing machine.
-Not yet tested: the statused and fainted icons, the non-Poké ball colours,
-and the Master/Ultra flicker. The VoxelMod fix is backed by a real
-diagnostic build, not yet confirmed rendering correctly in play.
+Verified in game: the thrown Poké Ball, the party rows, the healing machine,
+and the VoxelMod battle-art fork fix. Not yet tested: the statused and fainted
+icons, the non-Poké ball colours, the Master/Ultra flicker, and the new
+OG-layout colouring (1.1.0).
