@@ -46,4 +46,11 @@ other for the sprites.
 bounds — personal, non-commercial use. An unofficial fan-art swap, not affiliated with or
 endorsed by Nintendo, Creatures Inc., GAME FREAK inc., or The Pokémon Company.
 
+**Engine v0.2.13 and later: set COLORS to ADVANCED.** That release gated full-colour art
+behind the colour mode — `Renderer.withTrueColor()` now discards every marked region unless
+`PaletteFX.honorsTrueColor()` agrees, which for Gen 1 means the `ADVANCED` mode. On SGB or
+any other mode the sprites still swap in but render in flat shades. The same gate applies to
+the engine's own true-colour art, so it is a deliberate policy change rather than anything
+specific to this mod.
+
 Verified in game.
