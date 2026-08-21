@@ -53,4 +53,7 @@ any other mode the sprites still swap in but render in flat shades. The same gat
 the engine's own true-colour art, so it is a deliberate policy change rather than anything
 specific to this mod.
 
-Verified in game.
+**Options.** `CAUGHT BALL` switches the marker between MODERN and VANILLA. `DEX COLOR`
+picks how the art is marked for true colour — `BANDS` (the default), `EXACT`, `BOX` or `OFF`.
+
+Verified in game on engine v0.2.14.
